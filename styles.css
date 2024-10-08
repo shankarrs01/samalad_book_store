@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+/* Header CSS*/
+.nav-bar {
+    background-color: #4C4C6D;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.address {
+    background-color: #FFE194;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.details {
+    color: #4C4C6D;
+}
+
+/* Banner CSS*/
+.banner {
+    background-image: url("./images/banner.jpg");
+    height: 400px;
+    background-size: cover;
+}
+
+/*Main CSS*/
+.content {
+    background-color: #E8F6EF;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 330px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #4C4C6D;
+    padding: 20px;
+}
+
+.card-image {
+    height: 200px;
+    width: 250px;
+    padding: 15px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+.card-btn {
+    background-color: #4C4C6D;
+    color: #E8F6EF;
+    margin-left: 20px;
+    height: 60px;
+    width: 80px;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 25px;
+}
+
+.card-btn:hover {
+    color: #4C4C6D;
+    background-color: #E8F6EF;
+    margin-left: 20px;
+    height: 60px;
+    width: 80px;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 25px;
+    border-bottom: 2px solid #4C4C6D;
+    border-top: 2px solid #4C4C6D;
+}
+
+/*Sub Content CSS*/
+.sub-content-card {
+    background-color: white;
+    height: 300px;
+    width: 96%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.sub-header-title {
+    color: #4C4C6D;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.sun-body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub-box img {
+    height: 300;
+    width: 500;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.sub-box img:hover {
+    transform: scale(1.12);
+}
+
+/*Footer CSS*/
+.footer-header {
+    background-color: #4C4C6D;
+    height: 60px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        background-size: cover;
+        height: 300px;
+    }
+
+    .card {
+        width: auto;
+        height: 400px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .card-image {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-btn {
+
+        width: 90px;
+    }
+
+    .sub-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-header {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .address {
+        font-size: 0.89rem;
+        font-weight: 700;
+        padding: 0px 11vw;
+        line-height: 20px;
+    }
+
+    .banner {
+        object-fit: cover;
+        height: 250px;
+    }
+
+    .footer-header {
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+}
